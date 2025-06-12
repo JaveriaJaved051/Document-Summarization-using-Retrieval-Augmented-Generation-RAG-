@@ -1,0 +1,19 @@
+name: rag-summarization
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pytorch
+  - cudatoolkit=11.8
+  - pip:
+      - PyPDF2
+      - faiss-cpu
+      - sentence-transformers
+      - transformers>=4.40.0  # Required for LLaMA 3
+      - accelerate
+      - bitsandbytes
+      - torch
+      - einops  # Required for LLaMA 3
+      - langchain

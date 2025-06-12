@@ -1,0 +1,12 @@
+CHUNK_SIZE = 500  # Max characters per chunk
+CHUNK_MIN_SIZE = 100  # Min characters per chunk
+SEMANTIC_THRESHOLD = 0.82  # Similarity threshold for topic breaks
+EMBEDDING_MODEL = "all-MiniLM-L6-v2"  # Also used for chunking
+VECTOR_DB_PATH = "vector_store.faiss"
+RETRIEVAL_TOP_K = 5
+SUMMARIZATION_MODEL = "google/flan-t5-base"
+QUERY = "Summarize this document"
+SUMMARIZATION_MODEL = "meta-llama/Meta-Llama-3-8B-Instruct"  # Updated to LLaMA 3
+MAX_NEW_TOKENS = 512  # For summary generation
+TEMPERATURE = 0.7  # Creativity control
+TOP_P = 0.9  # Diversity control
